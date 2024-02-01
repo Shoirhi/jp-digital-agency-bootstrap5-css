@@ -1,0 +1,271 @@
+/* 設定 */
+
+:root {
+  --btn-primary-bg-color: #0017c1;
+  --btn-primary-text-color: #ffffff;
+  --btn-secondary-color: #0017c1;
+  --text-body: #1a1a1a;
+  --components-rounded: 0;
+}
+
+/* デジタル庁デザインシステム設定 */
+
+:root {
+  --line-height-s: 1.4;
+  --line-height-m: 1.5;
+  --line-height-l: 1.7;
+  --letter-spacing-s: .02em;
+  --letter-spacing-m: .04em;
+  --weight-r: normal;
+  --weight-m: bold;
+  --weight-b: bold;
+  --size-36: 2.25rem;
+  --size-32: 2rem;
+  --size-28: 1.75rem;
+  --size-24: 1.5rem;
+  --size-20: 1.25rem;
+  --size-16: 1rem;
+  --size-14: .875rem;
+  --size-12: .75rem;
+  --size-10: .625rem;
+  --space-05: 4px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-5: 40px;
+  --space-8: 64px;
+  --space-13: 104px;
+}
+
+/* Bootstrap設定 */
+
+:root {
+  --bs-border-radius: var(--components-rounded);
+  --bs-border-radius-sm: var(--components-rounded);
+  --bs-border-radius-lg: var(--components-rounded);
+}
+
+/* モバイル */
+
+/* 見出し */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .fs-1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6 {
+  font-weight: var(--weight-m);
+  letter-spacing: var(--letter-spacing-m);
+}
+
+h1, .h1, .fs-1 {
+  font-size: var(--size-32);
+  line-height: var(--line-height-m);
+}
+
+h2, .h2, .fs-2 {
+  font-size: var(--size-28);
+  line-height: var(--line-height-m);
+}
+
+h3, .h3, .fs-3 {
+  font-size: var(--size-24);
+  line-height: var(--line-height-m);
+}
+
+h4, .h4, .fs-4 {
+  font-size: var(--size-20);
+  line-height: var(--line-height-m);
+}
+
+h5, .h5, .fs-5 {
+  font-size: var(--size-16);
+  line-height: var(--line-height-m);
+}
+
+h6, .h6, .fs-6 {
+  font-size: var(--size-16);
+  line-height: var(--line-height-l);
+}
+
+h1, h2, .h1, .h2 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+h3, .h3 {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-3);
+}
+
+h4, h5, .h4, .h5 {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-2);
+}
+
+h6, .h6 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+/* 本文 */
+
+p, .text-l, .text-m {
+  letter-spacing: var(--letter-spacing-m);
+  line-height: var(--line-height-l);
+  font-weight: var(--weight-r);
+}
+
+p {
+  font-size: var(--size-16);
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+}
+
+.text-l {
+  font-size: var(--size-16);
+}
+
+.text-m {
+  font-size: var(--size-14);
+}
+
+/* 箇条書き */
+
+ul, ol {
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+  padding-left: 1.4rem;
+  font-size: var(--size-16);
+  letter-spacing: var(--letter-spacing-m);
+  line-height: var(--line-height-l);
+  font-weight: var(--weight-r);
+}
+
+ul li, ol li {
+  margin-top: var(--space-1);
+}
+
+li > ul, li > ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ラベル */
+
+.label-l, .label-m {
+  letter-spacing: var(--letter-spacing-m);
+  line-height: var(--line-height-m);
+  font-weight: var(--weight-m);
+}
+
+.label-l {
+  font-size: var(--size-14);
+}
+
+.label-m {
+  font-size: var(--size-12);
+}
+
+/* 補足 */
+
+.sup-l, .sup-m {
+  letter-spacing: var(--letter-spacing-s);
+  line-height: var(--line-height-l);
+  font-weight: var(--weight-r);
+}
+
+.sup-l {
+  font-size: var(--size-12);
+}
+
+.sup-m {
+  font-size: var(--size-10);
+}
+
+/* ボタン */
+
+.btn {
+  --bs-btn-padding-x: .75em;
+  --bs-btn-padding-y: .75em;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: var(--weight-b);
+  --bs-btn-line-height: var(--line-height-m);
+  min-width: 6em;
+  letter-spacing: var(--letter-spacing-m);
+}
+
+.btn-lg {
+  --bs-btn-padding-x: 1em;
+  --bs-btn-padding-y: 1em;
+  --bs-btn-font-size: 1rem;
+  min-width: 8.5em;
+}
+
+.btn-sm {
+  --bs-btn-padding-x: .375em;
+  --bs-btn-padding-y: .375em;
+  --bs-btn-font-size: 1rem;
+  min-width: 5em;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--btn-primary-text-color);
+  --bs-btn-bg: var(--btn-primary-bg-color);
+  --bs-btn-border-color: var(--btn-primary-bg-color);
+  --bs-btn-hover-color: var(--btn-primary-text-color);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--btn-primary-bg-color), #1a1a1a 12%);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--btn-primary-bg-color), #1a1a1a 12%);
+  --bs-btn-active-color: var(--btn-primary-text-color);
+  --bs-btn-active-bg: color-mix(in srgb, var(--btn-primary-bg-color), #1a1a1a 24%);
+  --bs-btn-active-border-color: color-mix(in srgb, var(--btn-primary-bg-color), #1a1a1a 24%);
+}
+
+.btn-secondary {
+  --bs-btn-color: var(--btn-secondary-color);
+  --bs-btn-bg: inherit;
+  --bs-btn-border-color: var(--btn-secondary-color);
+  --bs-btn-hover-color: var(--btn-secondary-color);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--btn-primary-bg-color), #f5f5f5 88%);
+  --bs-btn-hover-border-color: var(--btn-secondary-color);
+  --bs-btn-active-color: var(--btn-secondary-color);
+  --bs-btn-active-bg: color-mix(in srgb, var(--btn-primary-bg-color), #f5f5f5 76%);
+  --bs-btn-active-border-color: var(--btn-secondary-color);
+}
+
+
+/* タブレット */
+@media(min-width: 576px) {
+
+  /* 見出し */
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .fs-1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6 {
+    font-weight: var(--weight-r);
+  }
+
+  h1, .h1, .fs-1 {
+    font-size: var(--size-36);
+    line-height: var(--line-height-s);
+  }
+
+  h2, .h2, .fs-2 {
+    font-size: var(--size-32);
+    line-height: var(--line-height-m);
+  }
+
+  h3, .h3, .fs-3 {
+    font-size: var(--size-28);
+    line-height: var(--line-height-m);
+  }
+
+  h4, .h4, .fs-4 {
+    font-size: var(--size-24);
+    line-height: var(--line-height-m);
+  }
+
+  h5, .h5, .fs-5 {
+    font-size: var(--size-20);
+    line-height: var(--line-height-m);
+  }
+
+  h6, .h6, .fs-6 {
+    font-size: var(--size-16);
+    line-height: var(--line-height-m);
+  }
+}
